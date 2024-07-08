@@ -1,0 +1,105 @@
+* { 
+  margin: 0; 
+  padding: 0; 
+}
+
+h1 {
+  flex-flow: row wrap;
+  font-size: xx-large;
+  font-family: Geneva, Verdana, sans-serif;
+  letter-spacing: 2px;
+}
+
+nav {
+  background-color: #B76200;
+  color: #525454;
+  font-size: large;
+  font-family: Geneva, Verdana, sans-serif;
+  padding: 10px 200px;
+}
+
+li.naviList {
+  border-left: 1px solid #E2DED8;
+  display: inline;
+  padding: 0px 10px;
+}
+
+li.naviList:first-child {
+  border-left: none;
+}
+
+a.navi {
+  color: #242424;
+  text-decoration: none;
+}
+
+a.navi:hover {
+  color: #666;
+  display: inline;
+  text-decoration: none;
+}
+
+section {
+  background: url(../img/cheap_diagonal_fabric.png) repeat 0 0;
+  margin: auto;
+  width: 1000px;
+}
+
+p {
+  font-family: Geneva, Verdana, sans-serif;
+  font-size: large;
+  padding: 15px 115px;
+}
+
+article {
+  font-family: Geneva, Verdana, sans-serif;
+  font-size: large;
+  margin: 0px 50px 30px 50px;
+  background-color: #FFFFFF;
+}
+
+p.timeStamp {
+  border-bottom: 2px solid #000000;
+  margin: 0px 30px;
+  padding: 10px 10px;
+  text-align: right;
+}
+
+p.articleTitle {
+  font-size: xx-large;
+  margin: 0px 30px;
+  padding: 20px 10px 10px 10px;
+}
+
+p.articleBody {
+  padding: 10px 70px 20px 70px;
+}
+
+figure {
+  padding: 30px 50px;
+}
+
+body {
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+  font-size: large;
+}
+
+header {
+  background: url(../img/ep_naturalblack.png) repeat 0 0;
+  color: #FFFFFF;
+  padding: 15px 100px;
+}
+
+video.center {
+margin-left: auto;
+margin-right: auto;
+display: block;
+}
+
+footer {
+  background-color: #525454;
+  color: #3FCFD4;
+  font-size: small;
+  padding: 10px 0px;
+  text-align: center; 
+}

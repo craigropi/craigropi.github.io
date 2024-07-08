@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en-US">
+	<head>
+		<title>Craig Ropi</title>
+		<link rel="stylesheet" type="text/css" href="css/craigropi.css" media="screen" />
+		<meta charset="utf-8" />
+	</head>
+	<body>
+		<header>
+			<h1>Craig Ropi</h1>
+		</header>
+		
+		<nav>
+			<ul>
+			<li class="naviList"><a class="navi" href="./craigropi.html" 
+			target="_self" rel="help">About</a></li>
+			
+			<li class="naviList"><a class="navi" href="./projects.html" 
+			target="_self" rel="help">Projects</a></li>
+			
+			<li class="naviList"><a class="navi" href="./contact.html" 
+			target="_self" rel="help">Contact</a></li>
+			
+			<li class="naviList"><a class="navi" href="./2022-09-06_Craig Ropi Resume.pdf" 
+			target="_blank" rel="help">Resume</a></li>
+			</ul>
+		</nav>
+		
+		<section>
+			<p>
+				
+				<article>
+					<p class="timeStamp">
+					2018-03-04
+					</p>
+					<p class="articleTitle">
+					Automated Blinds
+					</p>
+					<p class="articleBody">
+					Another home automation project... really? <br>
+					Well, yes. They're useful AND, I already live in a perfectly-calibrated testing environment - a normal house. <br>
+					<br>
+					<br>
+					<video class="center" width="640" height="360" controls>
+					<source src="./vid/AutomatedBlinds1.mp4" type="video/mp4">
+					Your browser does not support the video tag.	
+					</video>
+					<br>
+					<video class="center" width="640" height="360" controls>
+					<source src="./vid/AutomatedBlinds2.mp4" type="video/mp4">
+					Your browser does not support the video tag.	
+					</video>
+					<br>
+					The blinds were originally standard, off-the-shelf, cordless blinds that I modified to allow for control from my phone.
+					Out of the box, the blinds did use 4 gears to synchronize the raising/lowering of the two sides and a spring that prevents gravity from pulling the blinds to the floor.<br>
+					However, the unmodified blinds had to be raised/lowered by hand, so inconvenient!
+					<br><br>
+					I machined away some of the housing plastic so I could engage with one of the internal gears.
+					A brushed DC motor is mounted to the blinds top-base using custom 3D-printed plastic.
+					The gear attached to the rotor is also 3D printed and was designed using the gears in the original blinds as a model.
+					To keep track of the position of the blinds, the Arduino uses a limit switch mounted to the top-base to recalibrate its home position every time the blinds are fully raised.
+					<br> <br>
+					I used an Arduino 101 to communicate with an Android App via Bluetooth, generate the driving PWM for the brushed DC motor, and keep track of the position of the blinds.
+					As can be seen in the first video, my Android app now controls both the Automated Blinds and my previous project, the Remote Lightswitch.
+					<br> <br>
+					
+					3D modeling of the gear, motor holder, and assembly was again made easy by 
+					<a href="https://www.onshape.com/" 
+					target="_self" rel="help">Onshape</a> web-based and free 3D modeling software.
+					<br><br>
+					
+					Design Files:
+					<br>
+					<a href="https://github.com/craigropi/AutomatedBlinds_AndroidApp" 
+					target="blank" rel="help">Android App on Github</a>
+					<br>
+					<a href="https://github.com/craigropi/AutomatedBlinds_ArduinoSketch" 
+					target="blank" rel="help">Arduino Sketch on Github</a> 
+					<br>
+					<a href="https://cad.onshape.com/documents/b740d66fce5212cab23c4c17/w/966aabea5da8f508f2555e3f/e/93ba38bd363917c5e9eb085c" 
+					target="blank" rel="help">Plastic 3D Model on Onshape</a>
+					</p>
+				</article>
+				
+				<article>
+					<p class="timeStamp">
+					2017-05-24
+					</p>
+					<p class="articleTitle">
+					Remote Lightswitch
+					</p>
+					<p class="articleBody">
+					Last year, I set out to make something I would actually use regularly and decided on a Remote Lightswitch. <br>
+					<br>
+					<br>
+					<video class="center" width="640" height="360" controls>
+					<source src="./vid/RemoteLightSwitch.mp4" type="video/mp4">
+					Your browser does not support the video tag.	
+					</video>
+					<br>
+					A custom piece of 3D-printed plastic holds a servo motor at a distance from the switch such that the servo horn can knock the switch on the way up and down.
+					On the back side of the plastic is an Arduino 101, which controls the motor and deals with wireless communication.
+					Unlike a relay switch embedded in the lightswitch itself, this module has the advantage of still allowing mechanical control of the switch at all times.
+					The switch is controlled via Bluetooth from a custom Android app.
+					There is a USB connection for the Arduino, but only for providing power.<br> <br>
+					
+					This project had the added benefit of allowing me to try 
+					<a href="https://www.onshape.com/" 
+					target="_self" rel="help">Onshape</a> 
+					3D modeling.  I have a friend at Onshape who had been applying soft pressure on me for months to give it a go.  Now I can see why; it's free to start, web based, and much more intuitive than Sketchup.
+					<br><br>
+					
+					I finished this project some months ago and still use it regularly.
+					I usually find myself reaching for this phone app a few minutes after turning the light off, when I realize I'd really rather put off sleeping in favor of catching up on an edX course.
+					<br>
+					<br>
+					Design Files:
+					<br>
+					<a href="https://github.com/craigropi/RemoteLightSwitch_AndroidApp" 
+					target="blank" rel="help">Android App on Github</a>
+					<br>
+					<a href="https://github.com/craigropi/RemoteLightSwitch_ArduinoSketch" 
+					target="blank" rel="help">Arduino Sketch on Github</a> 
+					<br>
+					<a href="https://cad.onshape.com/documents/4d0407d89d0aee87b0ab5c25/w/9c976b5be7d68d738e317c7c/e/df0974973070553623c3902a" 
+					target="blank" rel="help">Plastic 3D Model on Onshape</a>
+					</p>
+				</article>
+				
+				<article>
+					<p class="timeStamp">
+					2017-05-11
+					</p>
+					<p class="articleTitle">
+					Coming Online!
+					</p>
+					<p class="articleBody">
+					I created this website after seeing a series of advertisements for pre-made site designs.
+					Seeing the ads made me wonder if years of updates to the HTML language had simplified website design since my high-school encounter with HTML.
+					<br><br/>
+					The answer seems to be an emphatic yes.
+					After a few nights of learning and coding, I have a simple site design I'm happy to put my name on, literally.
+					I decided to make the site live so I can keep working on it.  
+					I think it will be fun to build an online repository of my personal projects, which I'll be posting soon!
+					</p>
+				</article>
+			</p>
+			<footer>
+				All website content written by Craig
+			</footer>
+		</section>
+	</body>
+</html>
